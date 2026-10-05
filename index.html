@@ -3,131 +3,215 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>mirin — Portfolio</title>
-  <meta name="description" content="mirinnano のポートフォリオ。物語エンジン、開発者向けツール、日常の小さなアプリを作っています。">
-  <meta property="og:title" content="mirin — Portfolio">
-  <meta property="og:description" content="物語エンジン、開発者向けツール、日常の小さなアプリを作っています。">
-  <meta property="og:type" content="website">
+  <title>こてっちゃん | Profile &amp; About me</title>
+  <meta name="description" content="こてっちゃんのプロフィール。エロゲと投資が好きです。魂のゲーム、好きなクリエイター、作ったもののこと。">
+  <meta property="og:title" content="こてっちゃん | Profile &amp; About me">
+  <meta property="og:description" content="エロゲと投資が好きです。魂のゲーム、好きなクリエイター、作ったもののこと。">
+  <meta property="og:type" content="profile">
   <meta property="og:url" content="https://mirinnano.github.io/">
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/116880976?v=4">
-  <meta name="theme-color" content="#f4f1ea">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#faf9f6">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css?v=20261005-current">
 </head>
 <body>
-  <a class="skip" href="#main">本文へ移動</a>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="トップへ">mirin<span>.</span></a>
-    <nav aria-label="メイン">
-      <a href="#about">About</a>
-      <a href="#works">Works</a>
-      <a href="#stack">Stack</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <div class="backdrop" aria-hidden="true">
+    <div class="light-field">
+      <span class="color-flow flow-orange"></span>
+      <span class="color-flow flow-peach"></span>
+      <span class="color-flow flow-slate"></span>
+      <span class="color-flow flow-sky"></span>
+      <span class="color-flow flow-light"></span>
+      <span class="color-flow flow-light-two"></span>
+    </div>
+  </div>
+  <a class="skip" href="#profile">本文へ移動</a>
+  <header class="masthead">
+    <a href="#profile" class="home-link" aria-label="プロフィールへ">こてっちゃん</a>
+    <a href="#sheet" class="index-link">About me <span aria-hidden="true">↓</span></a>
   </header>
 
   <main id="main">
-    <section class="hero" id="top">
-      <div class="hero-text">
-        <p class="eyebrow">Developer / Tool maker</p>
-        <h1>物語と道具を、<br>手の届く形に。</h1>
-        <p class="lead">ノベルゲームのエンジン、開発を楽にするツール、毎日使う小さなアプリを作っています。Rust・Swift・TypeScript を中心に、気になったものはまず手を動かして確かめます。</p>
-        <div class="actions">
-          <a class="button primary" href="#works">作ったものを見る</a>
-          <a class="button" href="https://github.com/mirinnano">GitHub</a>
+    <section class="hero" aria-label="プロフィール">
+      <div class="profile" id="profile">
+        <div class="identity">
+          <img class="avatar" src="https://avatars.githubusercontent.com/u/116880976?v=4" alt="こてっちゃんのアバター" width="80" height="80">
+          <div class="identity-text">
+            <p class="handle">@mirinnano</p>
+            <p class="since">On GitHub since 2022</p>
+          </div>
         </div>
+        <h1 class="name">こてっちゃん<span aria-hidden="true">.</span></h1>
+        <p class="bio">エロゲと投資が好きです。<br>ゲームのエンジンや、ギターの練習アプリも作っています。</p>
+        <nav class="socials" aria-label="SNS">
+          <a href="https://github.com/mirinnano">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://x.com/102502">X <span class="social-handle">@102502</span> <span aria-hidden="true">↗</span></a>
+        </nav>
       </div>
-      <figure class="avatar">
-        <img src="https://avatars.githubusercontent.com/u/116880976?v=4" alt="mirinnano の GitHub アバター" width="240" height="240">
-      </figure>
+      <a class="scroll-hint" href="#sheet"><span>Scroll to explore</span><span aria-hidden="true">↓</span></a>
     </section>
 
-    <section id="about" class="section">
-      <div class="section-head">
-        <p class="num">01</p>
-        <h2>About</h2>
-      </div>
-      <div class="about-grid">
-        <p>GitHub では <strong>mirinnano</strong> として活動しています。興味の中心は、物語を動かす仕組みと、作業の手間を減らす道具です。</p>
-        <ul class="facts">
-          <li><span>Focus</span>Visual novel engine / Developer tools / Apps</li>
-          <li><span>Like</span>Linux 環境づくり、ギター、創作</li>
-          <li><span>Now</span>Aria Engine と開発支援ツールを制作中</li>
-        </ul>
-      </div>
-    </section>
+    <section class="sheet" id="sheet" aria-label="About me">
+      <div class="sheet-inner">
+        <div class="about" id="about">
+          <h2>About me</h2>
+          <div>
+            <p>ゲームの物語も、音楽も好きです。<br>自分にとっての「魂のゲーム」と、その作り手たち。</p>
+          </div>
+        </div>
+        <div class="tabs" role="tablist" aria-label="表示切り替え">
+          <button type="button" role="tab" id="tab-favorites" aria-controls="panel-favorites" aria-selected="true">Favorites</button>
+          <button type="button" role="tab" id="tab-works" aria-controls="panel-works" aria-selected="false" tabindex="-1">Works</button>
+          <button type="button" role="tab" id="tab-log" aria-controls="panel-log" aria-selected="false" tabindex="-1">Log</button>
+          <button type="button" role="tab" id="tab-stack" aria-controls="panel-stack" aria-selected="false" tabindex="-1">Stack</button>
+          <span class="tab-ink" aria-hidden="true"></span>
+        </div>
 
-    <section id="works" class="section">
-      <div class="section-head">
-        <p class="num">02</p>
-        <h2>Works</h2>
-      </div>
-      <div class="works">
-        <article class="work featured">
-          <p class="tag">Rust · Script language · Runtime</p>
-          <h3>Aria Engine</h3>
-          <p>物語のための所有権対応スクリプト言語「Aria」と、Native / Web で同じバイトコードを実行する決定論的ランタイム。</p>
-          <a href="https://github.com/mirinnano/aria-engine-rust">Repository →</a>
-        </article>
-        <article class="work">
-          <p class="tag">Swift · Kotlin · Audio</p>
-          <h3>Guitar Tools</h3>
-          <p>macOS と Android 向けのギター練習ツール。メトロノーム、チューナー、オーディオ入力を使った練習解析を備えます。</p>
-          <a href="https://github.com/mirinnano/guitar">Repository →</a>
-        </article>
-        <article class="work">
-          <p class="tag">Go · PWA · SSE</p>
-          <h3>Pi Field Console</h3>
-          <p>ローカルの Pi セッションを、スマートフォンから確認・操作するための実験的な Web コンソール。</p>
-          <a href="https://github.com/mirinnano/pi-field-console">Repository →</a>
-        </article>
-        <article class="work">
-          <p class="tag">TypeScript · Agent tooling</p>
-          <h3>Pi × Herdr tools</h3>
-          <p>Herdr のペインで動く複数の Pi エージェントを、範囲を限定して連携させる拡張。</p>
-          <a href="https://github.com/mirinnano/pi-herdr-orchestrator">Repository →</a>
-        </article>
-        <article class="work">
-          <p class="tag">Shell · Gentoo · Sway</p>
-          <h3>dotfiles</h3>
-          <p>Gentoo と Sway を中心にした作業環境の設定。Portage、Neovim、zsh、自作スクリプトを管理しています。</p>
-          <a href="https://github.com/mirinnano/dotfiles">Repository →</a>
-        </article>
-        <article class="work">
-          <p class="tag">C# · .NET · Raylib</p>
-          <h3>Aria Engine (.NET)</h3>
-          <p>.NET と Raylib で作った、Aria Engine の前身となるノベルゲームエンジン。</p>
-          <a href="https://github.com/mirinnano/aria-engine">Repository →</a>
-        </article>
-      </div>
-    </section>
+        <div class="panel" id="panel-favorites" role="tabpanel" aria-labelledby="tab-favorites" tabindex="0">
+          <div class="favorite-heading"><span>01 / Games</span><h2>魂のゲーム</h2></div>
+          <div class="games">
+            <article class="game">
+              <p class="game-brand">ねこねこソフト</p>
+              <h3>サナララ</h3>
+              <p>一生に一度、願いをかなえる機会が訪れる。
+選ばれた人と、その案内役を描く四つの物語。</p>
+              <a href="https://bangumi.tv/subject/6233">作品情報 <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="game">
+              <p class="game-brand">Key</p>
+              <h3>リトルバスターズ！</h3>
+              <p>幼いころ、理樹を救ってくれた仲間たち。
+学園でも続く騒がしい毎日と、彼らの友情を描くノベルゲーム。</p>
+              <a href="https://store.steampowered.com/app/635940/">作品情報 <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="game">
+              <p class="game-brand">stage-nana</p>
+              <h3>Narcissu</h3>
+              <p>重い病を抱える青年と少女の物語。
+病院でも家でもない場所を求める二人を描くノベル。</p>
+              <a href="https://store.steampowered.com/app/264380/">作品情報 <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="game">
+              <p class="game-brand">Key</p>
+              <h3>Summer Pockets</h3>
+              <p>祖母の遺品整理のため、鳥白島を訪れた少年。
+島で出会う人々と過ごす、ひと夏の物語。</p>
+              <a href="https://key.visualarts.gr.jp/summer_rb/story.html">作品情報 <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="game">
+              <p class="game-brand">ケロQ</p>
+              <h3>素晴らしき日々<span class="game-subtitle">～不連続存在～</span></h3>
+              <p>日常に起きる出来事を、異なる人物から描く物語。
+語り手が変わるたびに、世界の見え方も変わっていく。</p>
+              <a href="https://www.keroq.co.jp/suba/story.html">作品情報 <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="game">
+              <p class="game-brand">D.O.</p>
+              <h3>家族計画</h3>
+              <p>事情を抱えた他人同士が、一つ屋根の下で家族として暮らし始める。
+血のつながらない人々の共同生活を描く作品。</p>
+              <a href="https://www.gungho.jp/cgame/game/kazoku/index.html">作品情報 <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+          <div class="favorite-heading people-heading"><span>02 / People</span><h2>好きなクリエイター</h2></div>
+          <ul class="people">
+            <li>片岡とも</li><li>麻枝准</li><li>折戸伸治</li><li>都乃河勇人</li><li>田中ロミオ</li>
+            <li>魁</li><li>海富一</li><li>木緒なち</li><li>王雀孫</li><li>藤間仁</li>
+          </ul>
+        </div>
 
-    <section id="stack" class="section">
-      <div class="section-head">
-        <p class="num">03</p>
-        <h2>Stack</h2>
-      </div>
-      <dl class="stack">
-        <div><dt>Languages</dt><dd>Rust, Swift, TypeScript, Go, Kotlin, C#, Python</dd></div>
-        <div><dt>Platforms</dt><dd>macOS, Android, Web, Linux</dd></div>
-        <div><dt>Environment</dt><dd>Gentoo, NixOS, Sway, Neovim</dd></div>
-      </dl>
-    </section>
+        <div class="panel" id="panel-works" role="tabpanel" aria-labelledby="tab-works" tabindex="0" hidden>
+          <a class="status" id="status" href="https://github.com/mirinnano/guitar">
+            <span class="status-label">Latest update</span>
+            <span id="status-text">Guitar Tools</span>
+            <time id="status-time" datetime="2026-10-04T15:00:44Z">2026.10.05</time>
+            <span class="status-arrow" aria-hidden="true">↗</span>
+          </a>
+          <ol class="works">
+            <li class="work" style="--tone:#c8553d">
+              <a href="https://github.com/mirinnano/aria-engine-rust">
+                <span class="work-no">01</span>
+                <span class="work-main">
+                  <span class="work-title">Aria Engine</span>
+                <span class="work-desc">物語を書くための言語 Aria と、そのランタイム。Web とネイティブで同じバイトコードを実行します。</span>
+                </span>
+                <span class="work-tags">Rust</span>
+                <span class="work-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li class="work" style="--tone:#4f6d5a">
+              <a href="https://github.com/mirinnano/guitar">
+                <span class="work-no">02</span>
+                <span class="work-main">
+                  <span class="work-title">Guitar Tools</span>
+                <span class="work-desc">macOS と Android 向けのギター練習アプリ。メトロノーム、チューナー、コード表をまとめました。</span>
+                </span>
+                <span class="work-tags">Swift / Kotlin</span>
+                <span class="work-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li class="work" style="--tone:#3d5a80">
+              <a href="https://github.com/mirinnano/pi-herdr-orchestrator">
+                <span class="work-no">03</span>
+                <span class="work-main">
+                  <span class="work-title">Pi Herdr Orchestrator</span>
+                <span class="work-desc">ターミナルの各ペインで動く AI エージェント Pi に、作業を割り振り、報告を受け取る拡張です。</span>
+                </span>
+                <span class="work-tags">TypeScript</span>
+                <span class="work-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li class="work" style="--tone:#8a6a3b">
+              <a href="https://github.com/mirinnano/pi-field-console">
+                <span class="work-no">04</span>
+                <span class="work-main">
+                  <span class="work-title">Pi Field Console</span>
+                <span class="work-desc">手元の Pi セッションを、スマートフォンから確認する実験的な Web コンソールです。</span>
+                </span>
+                <span class="work-tags">Go</span>
+                <span class="work-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li class="work" style="--tone:#5c5470">
+              <a href="https://github.com/mirinnano/dotfiles">
+                <span class="work-no">05</span>
+                <span class="work-main">
+                  <span class="work-title">dotfiles</span>
+                <span class="work-desc">Gentoo と Sway を中心にした作業環境の設定。Neovim、zsh、自作スクリプトも管理しています。</span>
+                </span>
+                <span class="work-tags">Shell</span>
+                <span class="work-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ol>
+        </div>
 
-    <section id="contact" class="section contact">
-      <div class="section-head">
-        <p class="num">04</p>
-        <h2>Contact</h2>
+        <div class="panel" id="panel-log" role="tabpanel" aria-labelledby="tab-log" tabindex="0" hidden>
+          <ol class="timeline">
+            <li><time datetime="2026-10">2026.10</time><p>Guitar Tools の macOS 版に、U-FRET の譜面検索を追加しました。</p></li>
+            <li><time datetime="2026-09">2026.09</time><p>Guitar Tools を公開しました。Pi の連携拡張と、モバイル向けコンソールも作成しました。</p></li>
+            <li><time datetime="2026-07">2026.07</time><p>Aria Engine の Rust 版と、デモ作品 Umikaze を公開しました。Gentoo の設定も公開しました。</p></li>
+            <li><time datetime="2026-02">2026.02</time><p>NixOS と Hyprland の設定を、Flakes で自動更新する構成にしました。</p></li>
+            <li><time datetime="2026-01">2026.01</time><p>VOICEVOX の音声合成とタイムライン編集を組み合わせた動画制作ツールを作りました。</p></li>
+          </ol>
+        </div>
+
+        <div class="panel" id="panel-stack" role="tabpanel" aria-labelledby="tab-stack" tabindex="0" hidden>
+          <dl class="stack">
+            <div><dt>Languages</dt><dd>Rust, Swift, TypeScript, Go, Kotlin, C#, Python</dd></div>
+            <div><dt>Environment</dt><dd>Gentoo, NixOS, Sway, Hyprland, Neovim, Ghostty</dd></div>
+            <div><dt>Platforms</dt><dd>macOS, Android, Web, Linux</dd></div>
+          </dl>
+        </div>
+
+        <footer class="site-footer">
+          <nav aria-label="SNS リンク"><a href="https://github.com/mirinnano">GitHub ↗</a><a href="https://x.com/102502">X ↗</a></nav>
+          <p>© <span id="year">2026</span> こてっちゃん</p>
+        </footer>
       </div>
-      <p>連絡や感想は GitHub からどうぞ。</p>
-      <a class="button primary" href="https://github.com/mirinnano">github.com/mirinnano</a>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <p>© <span id="year">2026</span> mirinnano</p>
-    <a href="#top">Back to top ↑</a>
-  </footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="assets/main.js?v=20261005-current" defer></script>
 </body>
 </html>
