@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mirin — Portfolio</title>
+  <meta name="description" content="mirinnano のポートフォリオ。物語エンジン、開発者向けツール、日常の小さなアプリを作っています。">
+  <meta property="og:title" content="mirin — Portfolio">
+  <meta property="og:description" content="物語エンジン、開発者向けツール、日常の小さなアプリを作っています。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mirinnano.github.io/">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/116880976?v=4">
+  <meta name="theme-color" content="#f4f1ea">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="トップへ">mirin<span>.</span></a>
+    <nav aria-label="メイン">
+      <a href="#about">About</a>
+      <a href="#works">Works</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <p class="eyebrow">Developer / Tool maker</p>
+        <h1>物語と道具を、<br>手の届く形に。</h1>
+        <p class="lead">ノベルゲームのエンジン、開発を楽にするツール、毎日使う小さなアプリを作っています。Rust・Swift・TypeScript を中心に、気になったものはまず手を動かして確かめます。</p>
+        <div class="actions">
+          <a class="button primary" href="#works">作ったものを見る</a>
+          <a class="button" href="https://github.com/mirinnano">GitHub</a>
+        </div>
+      </div>
+      <figure class="avatar">
+        <img src="https://avatars.githubusercontent.com/u/116880976?v=4" alt="mirinnano の GitHub アバター" width="240" height="240">
+      </figure>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head">
+        <p class="num">01</p>
+        <h2>About</h2>
+      </div>
+      <div class="about-grid">
+        <p>GitHub では <strong>mirinnano</strong> として活動しています。興味の中心は、物語を動かす仕組みと、作業の手間を減らす道具です。</p>
+        <ul class="facts">
+          <li><span>Focus</span>Visual novel engine / Developer tools / Apps</li>
+          <li><span>Like</span>Linux 環境づくり、ギター、創作</li>
+          <li><span>Now</span>Aria Engine と開発支援ツールを制作中</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="works" class="section">
+      <div class="section-head">
+        <p class="num">02</p>
+        <h2>Works</h2>
+      </div>
+      <div class="works">
+        <article class="work featured">
+          <p class="tag">Rust · Script language · Runtime</p>
+          <h3>Aria Engine</h3>
+          <p>物語のための所有権対応スクリプト言語「Aria」と、Native / Web で同じバイトコードを実行する決定論的ランタイム。</p>
+          <a href="https://github.com/mirinnano/aria-engine-rust">Repository →</a>
+        </article>
+        <article class="work">
+          <p class="tag">Swift · Kotlin · Audio</p>
+          <h3>Guitar Tools</h3>
+          <p>macOS と Android 向けのギター練習ツール。メトロノーム、チューナー、オーディオ入力を使った練習解析を備えます。</p>
+          <a href="https://github.com/mirinnano/guitar">Repository →</a>
+        </article>
+        <article class="work">
+          <p class="tag">Go · PWA · SSE</p>
+          <h3>Pi Field Console</h3>
+          <p>ローカルの Pi セッションを、スマートフォンから確認・操作するための実験的な Web コンソール。</p>
+          <a href="https://github.com/mirinnano/pi-field-console">Repository →</a>
+        </article>
+        <article class="work">
+          <p class="tag">TypeScript · Agent tooling</p>
+          <h3>Pi × Herdr tools</h3>
+          <p>Herdr のペインで動く複数の Pi エージェントを、範囲を限定して連携させる拡張。</p>
+          <a href="https://github.com/mirinnano/pi-herdr-orchestrator">Repository →</a>
+        </article>
+        <article class="work">
+          <p class="tag">Shell · Gentoo · Sway</p>
+          <h3>dotfiles</h3>
+          <p>Gentoo と Sway を中心にした作業環境の設定。Portage、Neovim、zsh、自作スクリプトを管理しています。</p>
+          <a href="https://github.com/mirinnano/dotfiles">Repository →</a>
+        </article>
+        <article class="work">
+          <p class="tag">C# · .NET · Raylib</p>
+          <h3>Aria Engine (.NET)</h3>
+          <p>.NET と Raylib で作った、Aria Engine の前身となるノベルゲームエンジン。</p>
+          <a href="https://github.com/mirinnano/aria-engine">Repository →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" class="section">
+      <div class="section-head">
+        <p class="num">03</p>
+        <h2>Stack</h2>
+      </div>
+      <dl class="stack">
+        <div><dt>Languages</dt><dd>Rust, Swift, TypeScript, Go, Kotlin, C#, Python</dd></div>
+        <div><dt>Platforms</dt><dd>macOS, Android, Web, Linux</dd></div>
+        <div><dt>Environment</dt><dd>Gentoo, NixOS, Sway, Neovim</dd></div>
+      </dl>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-head">
+        <p class="num">04</p>
+        <h2>Contact</h2>
+      </div>
+      <p>連絡や感想は GitHub からどうぞ。</p>
+      <a class="button primary" href="https://github.com/mirinnano">github.com/mirinnano</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> mirinnano</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
