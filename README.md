@@ -29,6 +29,15 @@ node --check assets/main.js
 JavaScript が無効でも、趣味と技能を含む本文をすべて読めます。
 外部 API から本文を取得する処理はありません。
 
+## ゲームのレイアウト
+
+画面サイズによらず、縦スクロールで1作品ずつ見せます。
+デスクトップはジャケットと文言を左右に、スマートフォンは上下に配置し、各作品に1画面程度の高さを確保しています。
+ジャケットは作品ごとのサイズと縦横比で全体を表示します。
+共通の画像枠や切り抜きは使いません。
+コピーは全作品で同じ文字サイズと行間を使い、長さに応じて改行します。
+内容が1画面に収まらない場合は、文字を縮めず、作品の高さを広げます。
+
 ## 背景の色
 
 Summer Pockets 初回限定版の公式ジャケットイラストの画面画像から、青空、草地、雲の代表色を抽出しています。
@@ -58,7 +67,7 @@ Summer Pockets 初回限定版の公式ジャケットイラストの画面画�
 | Summer Pockets | [公式サイト](https://key.visualarts.gr.jp/summer/index.html) | [初回限定版ジャケットイラスト](https://key.visualarts.gr.jp/summer/spec.html) |
 | 素晴らしき日々 | [公式キャンペーン](https://www.keroq.co.jp/suba/campaign.html) | [15周年版公式サイト](https://www.keroq.co.jp/suba15th/index.html)、[本人指定の15周年ジャケット画像（Amazon）](https://m.media-amazon.com/images/I/71dlfhyxUrL._AC_UF1000,1000_QL80_.jpg) |
 | 家族計画 | [心の絆版公式紹介](https://www.gungho.jp/cgame/game/kazoku/index.html) | [心の絆版ジャケット（MediaWorld）](https://mediaworld.co.jp/products/10401994001) |
-| AIR | [公式ストーリー](https://key.visualarts.gr.jp/product/air/story/) | [メモリアルエディションの公式パッケージビジュアル](https://key.visualarts.gr.jp/product/air/) |
+| AIR | [公式ストーリー](https://key.visualarts.gr.jp/product/air/story/) | [初回限定版の公式ジャケット（Key20周年史）](https://key.visualarts.gr.jp/key20th/history.html) |
 
 音楽欄のエレキギターと MintJam、麻枝准、投資欄の BNF、旅行の趣味は本人の発言に基づきます。
 リトルバスターズ！は本人指定の「――この青春（イマ）を駆け抜けろ。」を掲載し、「イマ」をルビで表示しています。
